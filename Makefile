@@ -63,12 +63,13 @@ docker.run:
 docker.test: docker.build
 	docker run $(DOCKER_IMAGE) make test
 
-push-submodules: ## push all submodules
+commit-submodules: ## commit all submodules
 	go mod vendor
 	git submodule foreach git add .
 	git submodule foreach git commit -m "update"
-	git submodule foreach git push origin master
 
+push-submodules: ## push all submodules
+	git submodule foreach git push origin master
 
 push-grpcgen: ## push all submodules
 	go mod vendor

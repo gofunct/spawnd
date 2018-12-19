@@ -11,7 +11,7 @@ import (
 	"github.com/golang/protobuf/protoc-gen-go/generator"
 	"github.com/golang/protobuf/protoc-gen-go/plugin"
 	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-	encoder "github.com/gofunct/spawnd/encode"
+	 "github.com/gofunct/spawnd/encoder"
 	 "github.com/gofunct/spawnd/funcmap"
 )
 
