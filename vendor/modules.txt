@@ -59,5 +59,3 @@ golang.org/x/sys/windows
 google.golang.org/genproto/googleapis/api/annotations
 # gopkg.in/yaml.v2 v2.2.2
 gopkg.in/yaml.v2
-# moul.io/protoc-gen-gotemplate v1.6.0
-moul.io/protoc-gen-gotemplate/helpers

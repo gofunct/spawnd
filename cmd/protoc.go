@@ -9,13 +9,13 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/generator"
 	"github.com/golang/protobuf/protoc-gen-go/plugin"
-	ggdescriptor "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-
-	pgghelpers "moul.io/protoc-gen-gotemplate/helpers"
+	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	encoder "github.com/gofunct/spawnd/encode"
+	 "github.com/gofunct/spawnd/funcmap"
 )
 
 var (
-	registry *ggdescriptor.Registry // some helpers need access to registry
+	registry *descriptor.Registry // some helpers need access to registry
 )
 
 const (
@@ -102,8 +102,8 @@ func main() {
 	}
 
 	if singlePackageMode {
-		registry = ggdescriptor.NewRegistry()
-		pgghelpers.SetRegistry(registry)
+		registry = descriptor.NewRegistry()
+		funcmap.SetRegistry(registry)
 		if err = registry.Load(g.Request); err != nil {
 			g.Error(err, "registry: failed to load the request")
 		}
@@ -117,7 +117,7 @@ func main() {
 					g.Error(err, "registry: failed to lookup file %q", file.GetName())
 				}
 			}
-			encoder := NewGenericTemplateBasedEncoder(templateDir, file, debug, destinationDir)
+			encoder := encoder.NewGenericTemplateBasedEncoder(templateDir, file, debug, destinationDir)
 			for _, tmpl := range encoder.Files() {
 				concatOrAppend(tmpl)
 			}
@@ -126,7 +126,7 @@ func main() {
 		}
 
 		for _, service := range file.GetService() {
-			encoder := NewGenericServiceTemplateBasedEncoder(templateDir, service, file, debug, destinationDir)
+			encoder := encoder.NewGenericServiceTemplateBasedEncoder(templateDir, service, file, debug, destinationDir)
 			for _, tmpl := range encoder.Files() {
 				concatOrAppend(tmpl)
 			}
