@@ -1,0 +1,27 @@
+[submodule "templates/gokitgen"]
+	path = templates/gokitgen
+	url = https://github.com/gofunct/gokitgen.git
+[submodule "templates/proxygen"]
+	path = templates/proxygen
+	url = https://github.com/gofunct/proxygen.git
+[submodule "templates/protogen"]
+	path = templates/protogen
+	url = https://github.com/gofunct/protogen.git
+[submodule "templates/projectgen"]
+	path = templates/projectgen
+	url = https://github.com/gofunct/projectgen.git
+[submodule "templates/dbgen"]
+	path = templates/dbgen
+	url = https://github.com/gofunct/dbgen.git
+[submodule "templates/docgen"]
+	path = templates/docgen
+	url = https://github.com/gofunct/docgen.git
+[submodule "templates/configgen"]
+	path = templates/configgen
+	url = https://github.com/gofunct/configgen.git
+[submodule "templates/cmdgen"]
+	path = templates/cmdgen
+	url = https://github.com/gofunct/cmdgen.git
+[submodule "examples/demoservice"]
+	path = examples/demoservice
+	url = https://github.com/gofunct/demoservice.git
