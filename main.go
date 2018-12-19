@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gofunct/grpcgen/cmd"
+	"github.com/gofunct/spawnd/cmd"
 )
 
 func main() {

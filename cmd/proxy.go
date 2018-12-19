@@ -4,6 +4,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
+
+func init() {
+	rootCmd.AddCommand(proxyCmd)
+}
+
 // proxyCmd represents the proxy command
 var proxyCmd = &cobra.Command{
 	Use:   "proxy",
@@ -15,13 +20,7 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		newProject.CreateProxyCmdFile()
+		//newProject.CreateProxyCmdFile()
 	},
 }
-
-func init() {
-	rootCmd.AddCommand(proxyCmd)
-
-}
-
 

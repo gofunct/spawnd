@@ -2,10 +2,12 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/gofunct/grpcgen/project"
 	"github.com/spf13/cobra"
 )
 
+func init() {
+	rootCmd.AddCommand(initCmd)
+}
 
 var initCmd = &cobra.Command{
 	Use:     "init [name]",
@@ -15,7 +17,7 @@ var initCmd = &cobra.Command{
 with the appropriate structure for a grpcgen-based CLI application.`,
 
 	Run: func(cmd *cobra.Command, args []string)  {
-		project.InitializeProject(newProject)
+		//project.InitializeProject(newProject)
 		fmt.Fprintln(cmd.OutOrStdout(), `Your grpcgen application is ready at
 `+newProject.GetAbsPath()+`
 

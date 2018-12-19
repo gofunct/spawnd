@@ -4,7 +4,9 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/encode" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/examples/demoservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/funcmap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/scaffold" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/signal" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/templates/cmdgen" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/templates/configgen" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/templates/dbgen" vcs="Git" />

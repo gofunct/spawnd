@@ -1,24 +1,23 @@
 package cmd
 
 import (
-	"github.com/gofunct/grpcgen/project"
 	"github.com/spf13/cobra"
+	"github.com/gofunct/spawnd/scaffold"
 )
 
 var (
 	service, packageName, parentName, gopath, templatePath string
-	newProject = project.NewProjectFromCurrentPath()
+	newProject = scaffold.NewScaffoldFromCurrentPath()
 )
 
 func init() {
 	rootCmd.Flags().StringVar(&service, "service", "", "The protobuf message used for this configuration")
-	rootCmd.AddCommand(initCmd)
 }
 
 var (
 	rootCmd = &cobra.Command{
-		Use:   "grpcgen",
-		Short: "grpcgen is a utility for easily creating highly configurable golang microservices",
+		Use:   "spawnd",
+		Short: "spawnd is a utility for easily creating highly configurable golang microservices",
 	}
 )
 
