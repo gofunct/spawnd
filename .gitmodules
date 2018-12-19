@@ -25,3 +25,15 @@
 [submodule "examples/demoservice"]
 	path = examples/demoservice
 	url = https://github.com/gofunct/demoservice.git
+[submodule "encode"]
+	path = encode
+	url = https://github.com/gofunct/encode.git
+[submodule "scaffold"]
+	path = scaffold
+	url = https://github.com/gofunct/scaffold.git
+[submodule "signal"]
+	path = signal
+	url = https://github.com/gofunct/signal.git
+[submodule "funcmap"]
+	path = funcmap
+	url = https://github.com/gofunct/funcmap.git

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/encode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/examples/demoservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/scaffold" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/cmdgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/configgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/dbgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/docgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/gokitgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/projectgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/protogen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates/proxygen" vcs="Git" />
+  </component>
+</project>
